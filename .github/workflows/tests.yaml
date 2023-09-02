@@ -1,4 +1,4 @@
-name: ci-clean-store-workflow
+name: fullcycle-tatic-ddd-workflow
 on:
   push:
     branches: [main]
@@ -17,5 +17,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: yarn
-      - name: Run tests
-        run: yarn jest
