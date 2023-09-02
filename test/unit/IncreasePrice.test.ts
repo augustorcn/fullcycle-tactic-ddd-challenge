@@ -1,4 +1,4 @@
-import IncreasePrice from "../../src/domain/product/domainService/IncreasePrice";
+import IncreasePrice from "../../src/domain/product/domainServices/IncreasePrice";
 import Product from "../../src/domain/product/entities/Product";
 
 describe("IncrisePrice domain service", () => {
