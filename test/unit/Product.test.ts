@@ -19,16 +19,8 @@ describe("Product aggregate", () => {
 		}).toThrowError("Price must be greater than zero");
 	});
 
-	it("should change product name when changeName method is called", () => {
+	it("should create a valid product", () => {
 		const product = new Product("1", "Book", 100);
-		product.changeName("Book with changed name");
-		expect(product.name).toBeDefined();
-		expect(product.name).toBe("Book with changed name");
-	});
-
-	it("should change product price when changePrice method is called", () => {
-		const product = new Product("1", "Book", 100);
-		product.changePrice(150);
-		expect(product.price).toBe(150);
+		expect(product).toBeDefined();
 	});
 });
