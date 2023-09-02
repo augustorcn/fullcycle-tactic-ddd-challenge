@@ -28,7 +28,7 @@ describe("Customer aggregate", () => {
 			"13330-250",
 			"São Paulo"
 		);
-		customer.setAddress(address);
+		customer.changeAddress(address);
 		customer.activate();
 		expect(customer.isActive()).toBe(true);
 	});
