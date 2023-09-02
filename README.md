@@ -4,4 +4,11 @@
 
 # Intro
 
-Full Cycle course challenge from tactical ddd modeling module.
+Full Cycle course challenge from tactical DDD modeling module.
+
+# How to run
+
+```sh
+yarn && \
+yarn test
+```
