@@ -1,4 +1,4 @@
-name: fullcycle-tatic-ddd-workflow
+name: tests
 on:
   push:
     branches: [main]
