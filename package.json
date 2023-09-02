@@ -6,10 +6,7 @@
 	"author": "Augusto Rocha Carneiro Napoleão <gu_to@live.com>",
 	"license": "MIT",
 	"scripts": {
-		"prepare:ts": "tsc --init && tsc",
-		"prepare:husky": "husky install",
-		"prepare:jest": "ts-jest config:init",
-		"test": "jest --watch",
+		"test": "jest --coverage",
 		"commit": "git-cz"
 	},
 	"dependencies": {
