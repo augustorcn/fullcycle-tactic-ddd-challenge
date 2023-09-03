@@ -16,9 +16,7 @@ export default class OrderItem {
 
 	validate(): boolean {
 		if (this.quantity <= 0) {
-			throw new Error(
-				"Quantity must be greater than 0"
-			);
+			throw new Error("Quantity must be greater than 0");
 		}
 
 		return true;

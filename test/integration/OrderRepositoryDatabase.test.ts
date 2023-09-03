@@ -39,12 +39,7 @@ describe("Order repository", () => {
 	it("should create a new order when create method is called", async () => {
 		const customerRepository = new CustomerRepositoryDatabase();
 		const customer = new Customer("123", "Customer 1");
-		const address = new Address(
-			"Street 1",
-			1,
-			"Zipcode 1",
-			"City 1"
-		);
+		const address = new Address("Street 1", 1, "Zipcode 1", "City 1");
 		customer.changeAddress(address);
 		await customerRepository.create(customer);
 

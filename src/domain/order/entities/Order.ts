@@ -41,9 +41,6 @@ export default class Order {
 	}
 
 	getTotal(): number {
-		return this._items.reduce(
-			(acc, item) => acc + item.getTotal(),
-			0
-		);
+		return this._items.reduce((acc, item) => acc + item.getTotal(), 0);
 	}
 }

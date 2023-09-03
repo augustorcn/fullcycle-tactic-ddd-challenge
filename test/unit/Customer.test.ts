@@ -22,12 +22,7 @@ describe("Customer aggregate", () => {
 
 	it("should activate customer when activate method is called", () => {
 		const customer = new Customer("1", "Augusto");
-		const address = new Address(
-			"Rua 1",
-			123,
-			"13330-250",
-			"São Paulo"
-		);
+		const address = new Address("Rua 1", 123, "13330-250", "São Paulo");
 		customer.changeAddress(address);
 		customer.activate();
 		expect(customer.isActive()).toBe(true);
@@ -37,9 +32,7 @@ describe("Customer aggregate", () => {
 		expect(() => {
 			const customer = new Customer("1", "Customer 1");
 			customer.activate();
-		}).toThrowError(
-			"Address is mandatory to activate a customer"
-		);
+		}).toThrowError("Address is mandatory to activate a customer");
 	});
 
 	it("should deactivate customer when deactivate method is called", () => {

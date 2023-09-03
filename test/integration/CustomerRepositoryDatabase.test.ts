@@ -26,12 +26,7 @@ describe("Customer repository", () => {
 	it("should create a customer when a create method is called", async () => {
 		const customerRepository = new CustomerRepositoryDatabase();
 		const customer = new Customer("1", "Augusto");
-		const address = new Address(
-			"Street 1",
-			1,
-			"Zipcode 1",
-			"City 1"
-		);
+		const address = new Address("Street 1", 1, "Zipcode 1", "City 1");
 		customer.changeAddress(address);
 		await customerRepository.create(customer);
 
