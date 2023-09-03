@@ -23,12 +23,7 @@ describe("Order repository", () => {
 			sync: { force: true },
 		});
 
-		await sequelize.addModels([
-			CustomerModel,
-			OrderModel,
-			OrderItemModel,
-			ProductModel,
-		]);
+		await sequelize.addModels([CustomerModel, OrderModel, OrderItemModel, ProductModel]);
 		await sequelize.sync();
 	});
 
@@ -47,13 +42,7 @@ describe("Order repository", () => {
 		const product = new Product("123", "Product 1", 10);
 		await productRepository.create(product);
 
-		const orderItem = new OrderItem(
-			"1",
-			product.name,
-			product.price,
-			product.id,
-			2
-		);
+		const orderItem = new OrderItem("1", product.name, product.price, product.id, 2);
 
 		const order = new Order("123", "123", [orderItem]);
 

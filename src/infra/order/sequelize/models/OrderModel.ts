@@ -1,12 +1,4 @@
-import {
-	Table,
-	Model,
-	PrimaryKey,
-	Column,
-	ForeignKey,
-	BelongsTo,
-	HasMany,
-} from "sequelize-typescript";
+import { Table, Model, PrimaryKey, Column, ForeignKey, BelongsTo, HasMany } from "sequelize-typescript";
 import OrderItemModel from "./OrderItemModel";
 import CustomerModel from "../../../customer/sequelize/models/CustomerModel";
 
