@@ -1,6 +1,6 @@
 {
 	"trailingComma": "es5",
-	"tabWidth": 10,
+	"tabWidth": 1,
 	"semi": true,
 	"singleQuote": false
 }
